@@ -1,27 +1,20 @@
 
 package geometri;
-public class PersegiPanjang {
-    //membuat variable
-    private double panjang, lebar;
-    
-    // membuat constructor
-    public PersegiPanjang (double panjang,double lebar){
+
+public class PersegiPanjang{
+private double panjang;
+    private double lebar;
+
+    public PersegiPanjang(double panjang, double lebar) {
         this.panjang = panjang;
         this.lebar = lebar;
-        
     }
-    double setLuas (){
-    return panjang * lebar;
+
+    public double luas() {
+        return panjang * lebar;
     }
-    double setKeliling (){
-    return 2* (panjang+lebar);
-    
-    }
-    public static void main(String[] args) {
-        PersegiPanjang luas = new PersegiPanjang (9,8);
-        PersegiPanjang lebar = new PersegiPanjang (9,8);
-        System.out.println("Hasil Luas Persegi Panjang = "+ luas.setLuas());
-        System.out.println("Hasil Luas Persegi Panjang = "+ luas.setKeliling());
-      
+
+    public double keliling() {
+        return 2 * (panjang + lebar);
     }
 }
